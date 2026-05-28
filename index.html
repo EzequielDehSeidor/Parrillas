@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Parrilla</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <nav class="navbar container">
+      <a class="brand" href="#hero">Parrilla</a>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#work">Trabajos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="eyebrow">Bienvenido</p>
+        <h1>Tu parrilla ideal para eventos y celebraciones</h1>
+        <p>Diseño, sabor y estilo en cada proyecto. Inspírate con nuestro trabajo y contáctanos rápido.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Solicitar información</a>
+          <a class="btn btn-secondary" href="#work">Ver trabajos</a>
+        </div>
+      </div>
+      <div class="hero-carousel container">
+        <div class="carousel-track">
+          <div class="carousel-slide active">
+            <img src="https://via.placeholder.com/1200x520?text=Imagen+1" alt="Imagen 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="https://via.placeholder.com/1200x520?text=Imagen+2" alt="Imagen 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="https://via.placeholder.com/1200x520?text=Imagen+3" alt="Imagen 3" />
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+          <button class="dot" data-index="1" aria-label="Slide 2"></button>
+          <button class="dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <div class="section-header">
+        <span>Sección 2</span>
+        <h2>Servicios destacados</h2>
+        <p>Selecciona un servicio para ver más detalles.</p>
+      </div>
+      <div class="card-grid">
+        <article class="service-card" data-title="Asado Clásico" data-description="Clásicos cortes a la parrilla con guarniciones artesanales." data-image="https://via.placeholder.com/500x320?text=Asado+Clásico">
+          <div class="card-image"><img src="https://via.placeholder.com/500x320?text=Asado+Clásico" alt="Asado Clásico" /></div>
+          <div class="card-body">
+            <h3>Asado Clásico</h3>
+            <p>Tradición y sabor en cada corte.</p>
+          </div>
+        </article>
+        <article class="service-card" data-title="Parrillada Premium" data-description="Menú completo con ingredientes premium y servicio personalizado." data-image="https://via.placeholder.com/500x320?text=Parrillada+Premium">
+          <div class="card-image"><img src="https://via.placeholder.com/500x320?text=Parrillada+Premium" alt="Parrillada Premium" /></div>
+          <div class="card-body">
+            <h3>Parrillada Premium</h3>
+            <p>Experiencia gourmet junto al fuego.</p>
+          </div>
+        </article>
+        <article class="service-card" data-title="Eventos Corporativos" data-description="Soluciones completas para eventos empresariales y reuniones." data-image="https://via.placeholder.com/500x320?text=Eventos+Corporativos">
+          <div class="card-image"><img src="https://via.placeholder.com/500x320?text=Eventos+Corporativos" alt="Eventos Corporativos" /></div>
+          <div class="card-body">
+            <h3>Eventos Corporativos</h3>
+            <p>Planificación y servicio para cada ocasión.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="modal-overlay hidden" id="modalOverlay"></div>
+    <div class="modal hidden" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar modal">×</button>
+      <img src="https://via.placeholder.com/800x440?text=Detalle" alt="Detalle del servicio" id="modalImage" />
+      <div class="modal-content">
+        <h3 id="modalTitle">Título del servicio</h3>
+        <p id="modalDescription">Descripción extendida del servicio seleccionado.</p>
+      </div>
+    </div>
+
+    <section id="work" class="work container">
+      <div class="section-header">
+        <span>Sección 3</span>
+        <h2>Trabajos realizados</h2>
+        <p>Proyectos recientes con resultados reales y clientes satisfechos.</p>
+      </div>
+      <div class="work-grid">
+        <article class="work-card">
+          <img src="https://via.placeholder.com/600x420?text=Proyecto+1" alt="Proyecto 1" />
+          <div class="work-info">
+            <h3>Proyecto BBQ</h3>
+            <p>Cena temática con buffet y parrilla abierta.</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <img src="https://via.placeholder.com/600x420?text=Proyecto+2" alt="Proyecto 2" />
+          <div class="work-info">
+            <h3>Evento Familiar</h3>
+            <p>Servicio completo para festejar con estilo.</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <img src="https://via.placeholder.com/600x420?text=Proyecto+3" alt="Proyecto 3" />
+          <div class="work-info">
+            <h3>Reunión Corporativa</h3>
+            <p>Menú personalizado para eventos de empresa.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <div class="section-header">
+        <span>Sección 4</span>
+        <h2>Contacto y reservas</h2>
+        <p>Escríbenos por email o chatea por WhatsApp directamente.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card contact-form-card">
+          <h3>Envíanos un mensaje</h3>
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos qué necesitas" required></textarea>
+            <button class="btn btn-primary" type="submit">Enviar email</button>
+          </form>
+        </div>
+        <div class="contact-card contact-info-card">
+          <h3>¿Quieres info rápida?</h3>
+          <p>Si prefieres atención inmediata, chatea por WhatsApp. También puedes usar el código QR para abrir el chat directo.</p>
+          <div class="whatsapp-block">
+            <a class="btn btn-secondary whatsapp-btn" href="https://wa.me/5491123456789" target="_blank" rel="noreferrer">WhatsApp</a>
+            <div class="qr-placeholder">
+              <img src="https://via.placeholder.com/180?text=QR" alt="QR WhatsApp" />
+              <span>Escanea y envía tu mensaje</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Parrilla. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
