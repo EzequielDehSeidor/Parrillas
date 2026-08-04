@@ -11,8 +11,6 @@ para ser liviana, rápida y fácil de mantener.
 
 ## 📸 Capturas
 
-> Guardá las imágenes en la carpeta `capturas/` con estos nombres y se van a ver acá.
-
 ### Inicio (Hero)
 Presentación con imagen de fondo, título y botones de acción.
 
