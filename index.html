@@ -3,165 +3,423 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Parrilla</title>
+  <title>Hierro &amp; Forja · Los Amigos — Herrería y parrillas a medida</title>
+  <meta name="description" content="Hierro &amp; Forja · Los Amigos — Herrería a medida: frentes de parrilla, parrillas de acero y hierro, mesas y mesas ratonas, accesorios en hierro y mesas de acero. Presupuestos por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="vendor/glide/glide.core.min.css" />
+  <link rel="stylesheet" href="vendor/glide/glide.theme.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
     <nav class="navbar container">
-      <a class="brand" href="#hero">Parrilla</a>
-      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <a class="brand" href="#hero"><img class="brand-logo" src="image/logo-emblema.png" alt="" aria-hidden="true" /><span class="brand-text"><span class="brand-name">Hierro <span class="brand-amp">&amp;</span> Forja</span><small class="brand-sub">Los Amigos</small></span></a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="#hero">Inicio</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#work">Trabajos</a></li>
+        <li><a href="#products">Productos</a></li>
+        <li><a href="#destacados">Trabajos</a></li>
         <li><a href="#contact">Contacto</a></li>
+        <li><a href="#taller">Ubicación</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section id="hero" class="hero">
+      <div class="hero-bg" style="background-image: url('image/hero.jpg')"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content container">
-        <p class="eyebrow">Bienvenido</p>
-        <h1>Tu parrilla ideal para eventos y celebraciones</h1>
-        <p>Diseño, sabor y estilo en cada proyecto. Inspírate con nuestro trabajo y contáctanos rápido.</p>
+        <p class="eyebrow">Hierro · Fuego · Diseño</p>
+        <h1>Parrillas y herrería a medida para tu hogar</h1>
+        <p>Fabricamos frentes de parrilla, parrillas de acero y hierro, mesas, accesorios y mucho más. Trabajo prolijo, materiales de primera y entrega a domicilio.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Solicitar información</a>
-          <a class="btn btn-secondary" href="#work">Ver trabajos</a>
-        </div>
-      </div>
-      <div class="hero-carousel container">
-        <div class="carousel-track">
-          <div class="carousel-slide active">
-            <img src="https://via.placeholder.com/1200x520?text=Imagen+1" alt="Imagen 1" />
-          </div>
-          <div class="carousel-slide">
-            <img src="https://via.placeholder.com/1200x520?text=Imagen+2" alt="Imagen 2" />
-          </div>
-          <div class="carousel-slide">
-            <img src="https://via.placeholder.com/1200x520?text=Imagen+3" alt="Imagen 3" />
-          </div>
-        </div>
-        <div class="carousel-dots">
-          <button class="dot active" data-index="0" aria-label="Slide 1"></button>
-          <button class="dot" data-index="1" aria-label="Slide 2"></button>
-          <button class="dot" data-index="2" aria-label="Slide 3"></button>
+          <a class="btn btn-primary" href="#contact">Pedir presupuesto</a>
+          <a class="btn btn-secondary" href="#products">Ver productos</a>
         </div>
       </div>
     </section>
 
-    <section id="services" class="services container">
+    <section id="products" class="services container">
       <div class="section-header">
-        <span>Sección 2</span>
-        <h2>Servicios destacados</h2>
-        <p>Selecciona un servicio para ver más detalles.</p>
+        <span>Nuestros productos</span>
+        <h2>Lo que fabricamos</h2>
+        <p>Tocá cualquier producto para verlo en detalle y consultar precio directo por WhatsApp.</p>
       </div>
-      <div class="card-grid">
-        <article class="service-card" data-title="Asado Clásico" data-description="Clásicos cortes a la parrilla con guarniciones artesanales." data-image="https://via.placeholder.com/500x320?text=Asado+Clásico">
-          <div class="card-image"><img src="https://via.placeholder.com/500x320?text=Asado+Clásico" alt="Asado Clásico" /></div>
-          <div class="card-body">
-            <h3>Asado Clásico</h3>
-            <p>Tradición y sabor en cada corte.</p>
-          </div>
-        </article>
-        <article class="service-card" data-title="Parrillada Premium" data-description="Menú completo con ingredientes premium y servicio personalizado." data-image="https://via.placeholder.com/500x320?text=Parrillada+Premium">
-          <div class="card-image"><img src="https://via.placeholder.com/500x320?text=Parrillada+Premium" alt="Parrillada Premium" /></div>
-          <div class="card-body">
-            <h3>Parrillada Premium</h3>
-            <p>Experiencia gourmet junto al fuego.</p>
-          </div>
-        </article>
-        <article class="service-card" data-title="Eventos Corporativos" data-description="Soluciones completas para eventos empresariales y reuniones." data-image="https://via.placeholder.com/500x320?text=Eventos+Corporativos">
-          <div class="card-image"><img src="https://via.placeholder.com/500x320?text=Eventos+Corporativos" alt="Eventos Corporativos" /></div>
-          <div class="card-body">
-            <h3>Eventos Corporativos</h3>
-            <p>Planificación y servicio para cada ocasión.</p>
-          </div>
-        </article>
+
+      <!-- Frentes de parrilla -->
+      <div class="product-category">
+        <h3 class="category-title">Frentes de parrilla</h3>
+        <div class="card-grid">
+          <article class="service-card"
+            data-title="Frente en chapa negra"
+            data-description="Frente de parrilla completo en chapa negra con campana, horno pizzero lateral y mesada de acero. Terminación prolija para quinchos modernos."
+            data-image="image/chapa-negra-6-600x600-1.webp">
+            <div class="card-image"><img src="image/chapa-negra-6-600x600-1.webp" alt="Frente de parrilla en chapa negra" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Frente en chapa negra</h4>
+              <p>Completo, con campana, horno lateral y mesada.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Frente con horno de barro"
+            data-description="Frente exterior con triple salida de humo, parrilla central y horno de barro integrado. Ideal para patios y galerías amplias."
+            data-image="image/013085f92c87cd3971dfcbcd3c57ddbe.jpg">
+            <div class="card-image"><img src="image/013085f92c87cd3971dfcbcd3c57ddbe.jpg" alt="Frente de parrilla con horno de barro" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Frente con horno de barro</h4>
+              <p>Triple salida de humo y horno integrado.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Frente con tapa rebatible"
+            data-description="Frente en negro con tapa rebatible, luz interior, cajonera y mesada de acero. Cierre prolijo para que no se ensucie el ambiente."
+            data-image="image/62d4249658ba1787955b7db287602943.jpg">
+            <div class="card-image"><img src="image/62d4249658ba1787955b7db287602943.jpg" alt="Frente de parrilla con tapa rebatible" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Frente con tapa rebatible</h4>
+              <p>Tapa rebatible, luz interior y cajonera.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Frente con bacha"
+            data-description="Frente de parrilla con bacha y mueble bajo integrado. La solución completa para dejar tu galería lista para usar."
+            data-image="image/fadf65671f15802334b7dcd4bac00722.jpg">
+            <div class="card-image"><img src="image/fadf65671f15802334b7dcd4bac00722.jpg" alt="Frente de parrilla con bacha" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Frente con bacha</h4>
+              <p>Con bacha y mueble bajo integrado.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Tapa y puertas a medida"
+            data-description="Tapas rebatibles y puertas para frente de parrilla en chapa reforzada. Se adaptan a la medida de tu obra."
+            data-image="image/df827c5778954717e5e77c864159b0cc.jpg">
+            <div class="card-image"><img src="image/df827c5778954717e5e77c864159b0cc.jpg" alt="Tapa y puertas para frente de parrilla" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Tapa y puertas a medida</h4>
+              <p>Chapa reforzada, adaptadas a tu obra.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Parrillas de acero y hierro -->
+      <div class="product-category">
+        <h3 class="category-title">Parrillas de acero y hierro</h3>
+        <div class="card-grid">
+          <article class="service-card"
+            data-title="Parrilla de hierro en V"
+            data-description="Parrilla con varilla en V para que la grasa no caiga sobre las brasas. Hierro macizo, del tamaño que necesites."
+            data-image="image/iap_640x640.4964545705_imupqnbh.avif">
+            <div class="card-image"><img src="image/iap_640x640.4964545705_imupqnbh.avif" alt="Parrilla de hierro con varilla en V" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Parrilla de hierro en V</h4>
+              <p>Varilla en V, hierro macizo, a medida.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Parrilla de acero portátil"
+            data-description="Parrilla/bandeja de acero con asas, robusta y compacta. Ideal para llevar o para espacios chicos."
+            data-image="image/photoroom_20240424_210742-5792caf2eba0ead24a17140037175201-1024-1024.webp">
+            <div class="card-image"><img src="image/photoroom_20240424_210742-5792caf2eba0ead24a17140037175201-1024-1024.webp" alt="Parrilla de acero portátil" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Parrilla de acero portátil</h4>
+              <p>Compacta, con asas, para llevar.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Mesas y mesas ratonas -->
+      <div class="product-category">
+        <h3 class="category-title">Mesas y mesas ratonas</h3>
+        <div class="card-grid">
+          <article class="service-card"
+            data-title="Barra desayunador alta"
+            data-description="Barra/desayunador alto en hierro y madera maciza. Perfecta para cocinas y quinchos con estilo industrial."
+            data-image="image/images.jpg">
+            <div class="card-image"><img src="image/images.jpg" alt="Barra desayunador alta de hierro y madera" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Barra desayunador alta</h4>
+              <p>Hierro y madera maciza, estilo industrial.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Barra con banqueta"
+            data-description="Desayunador de hierro negro con tapa de madera. Se puede sumar el juego de banquetas a tono."
+            data-image="image/61b1eXoUcVL.jpg">
+            <div class="card-image"><img src="image/61b1eXoUcVL.jpg" alt="Barra desayunador con banqueta" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Barra con banqueta</h4>
+              <p>Hierro negro y madera, con banquetas.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Barra con banquetas y panel"
+            data-description="Juego de barra con banquetas y panel decorativo calado en hierro. Un rincón de estar con mucha onda."
+            data-image="image/7bc80319cc8ed9090e3d2f5d149dbd7e.jpg">
+            <div class="card-image"><img src="image/7bc80319cc8ed9090e3d2f5d149dbd7e.jpg" alt="Barra con banquetas y panel decorativo" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Barra con banquetas y panel</h4>
+              <p>Con panel decorativo calado en hierro.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Isla / mesa alta con estante"
+            data-description="Mesa alta tipo isla con estante inferior y tapa de madera clara. Suma espacio de apoyo y guardado."
+            data-image="image/357cb138249b1b14240ff7d467387ca4f06c1488b9c50b896698de38e3160df269882.jpg">
+            <div class="card-image"><img src="image/357cb138249b1b14240ff7d467387ca4f06c1488b9c50b896698de38e3160df269882.jpg" alt="Isla o mesa alta con estante" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Isla / mesa alta con estante</h4>
+              <p>Con estante inferior y tapa de madera.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Mesa ratona diseño en X"
+            data-description="Mesa ratona con base de hierro en diseño X y tapa de madera maciza. Un living con impronta industrial."
+            data-image="image/images (1).jpg">
+            <div class="card-image"><img src="image/images (1).jpg" alt="Mesa ratona con diseño en X" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Mesa ratona diseño en X</h4>
+              <p>Base de hierro en X, tapa de madera maciza.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Mesa ratona con estante"
+            data-description="Mesa ratona de hierro negro con doble tapa de madera y estante inferior. Práctica y de mucha presencia."
+            data-image="image/805df3e6473317bdef27b8f087f38a81.jpg">
+            <div class="card-image"><img src="image/805df3e6473317bdef27b8f087f38a81.jpg" alt="Mesa ratona con estante" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Mesa ratona con estante</h4>
+              <p>Doble tapa de madera y estante inferior.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Mesa ratona madera y hierro"
+            data-description="Mesa ratona de líneas simples, hierro negro y tapa de madera lustrada. Elegante y atemporal."
+            data-image="image/D_NQ_NP_669163-MLA41258695134_032020-O.webp">
+            <div class="card-image"><img src="image/D_NQ_NP_669163-MLA41258695134_032020-O.webp" alt="Mesa ratona de madera y hierro" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Mesa ratona madera y hierro</h4>
+              <p>Líneas simples, madera lustrada.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Accesorios en hierro -->
+      <div class="product-category">
+        <h3 class="category-title">Accesorios en hierro</h3>
+        <div class="card-grid">
+          <article class="service-card"
+            data-title="Leñero de hierro"
+            data-description="Porta leña de hierro con malla metálica. Ordená y luce la leña al lado de tu parrilla."
+            data-image="image/i4703433273.webp">
+            <div class="card-image"><img src="image/i4703433273.webp" alt="Leñero de hierro con malla" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Leñero de hierro</h4>
+              <p>Con malla metálica, ordená la leña.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Accesorios a medida"
+            data-description="Fabricamos todo tipo de accesorios en hierro para tu parrilla y quincho. Contanos qué necesitás y lo hacemos."
+            data-image="image/66317391654e29.06275756.jpg">
+            <div class="card-image"><img src="image/66317391654e29.06275756.jpg" alt="Accesorios en hierro a medida" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Accesorios a medida</h4>
+              <p>Todo tipo de accesorios en hierro.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Mesas de acero -->
+      <div class="product-category">
+        <h3 class="category-title">Mesas de acero</h3>
+        <div class="card-grid">
+          <article class="service-card"
+            data-title="Mesa de acero inoxidable"
+            data-description="Mesa de trabajo en acero inoxidable con estante inferior. Resistente y fácil de limpiar, para cocina o parrilla."
+            data-image="image/WhatsApp-Image-2026-03-20-at-2.24.10-PM-scaled.jpeg">
+            <div class="card-image"><img src="image/WhatsApp-Image-2026-03-20-at-2.24.10-PM-scaled.jpeg" alt="Mesa de acero inoxidable con estante" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Mesa de acero inoxidable</h4>
+              <p>Con estante inferior, para cocina o parrilla.</p>
+            </div>
+          </article>
+          <article class="service-card"
+            data-title="Estructura de barra en acero"
+            data-description="Estructura de barra en acero inoxidable, lista para colocar la tapa que elijas. Fabricación a medida."
+            data-image="image/461b5aae035faf2ab564a4e33e24b9872ccfc505.jpeg">
+            <div class="card-image"><img src="image/461b5aae035faf2ab564a4e33e24b9872ccfc505.jpeg" alt="Estructura de barra en acero inoxidable" loading="lazy" /></div>
+            <div class="card-body">
+              <h4>Estructura de barra en acero</h4>
+              <p>Lista para la tapa que elijas, a medida.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <div class="modal-overlay hidden" id="modalOverlay"></div>
-    <div class="modal hidden" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" id="closeModal" aria-label="Cerrar modal">×</button>
-      <img src="https://via.placeholder.com/800x440?text=Detalle" alt="Detalle del servicio" id="modalImage" />
-      <div class="modal-content">
-        <h3 id="modalTitle">Título del servicio</h3>
-        <p id="modalDescription">Descripción extendida del servicio seleccionado.</p>
+    <section id="destacados" class="featured">
+      <div class="section-header center container">
+        <span>Destacados</span>
+        <h2>Algunos de nuestros trabajos</h2>
+        <p>Piezas reales fabricadas a medida para nuestros clientes.</p>
       </div>
-    </div>
-
-    <section id="work" class="work container">
-      <div class="section-header">
-        <span>Sección 3</span>
-        <h2>Trabajos realizados</h2>
-        <p>Proyectos recientes con resultados reales y clientes satisfechos.</p>
-      </div>
-      <div class="work-grid">
-        <article class="work-card">
-          <img src="https://via.placeholder.com/600x420?text=Proyecto+1" alt="Proyecto 1" />
-          <div class="work-info">
-            <h3>Proyecto BBQ</h3>
-            <p>Cena temática con buffet y parrilla abierta.</p>
-          </div>
-        </article>
-        <article class="work-card">
-          <img src="https://via.placeholder.com/600x420?text=Proyecto+2" alt="Proyecto 2" />
-          <div class="work-info">
-            <h3>Evento Familiar</h3>
-            <p>Servicio completo para festejar con estilo.</p>
-          </div>
-        </article>
-        <article class="work-card">
-          <img src="https://via.placeholder.com/600x420?text=Proyecto+3" alt="Proyecto 3" />
-          <div class="work-info">
-            <h3>Reunión Corporativa</h3>
-            <p>Menú personalizado para eventos de empresa.</p>
-          </div>
-        </article>
+      <div class="glide featured-glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <figure class="fc-card">
+                <img src="image/chapa-negra-6-600x600-1.webp" alt="Frente en chapa negra" loading="lazy" />
+                <figcaption class="fc-caption">
+                  <h3>Frente en chapa negra</h3>
+                  <p>Completo, con campana, horno lateral y mesada.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="fc-card">
+                <img src="image/013085f92c87cd3971dfcbcd3c57ddbe.jpg" alt="Frente con horno de barro" loading="lazy" />
+                <figcaption class="fc-caption">
+                  <h3>Frente con horno de barro</h3>
+                  <p>Triple salida de humo y horno integrado.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="fc-card">
+                <img src="image/7bc80319cc8ed9090e3d2f5d149dbd7e.jpg" alt="Barra con banquetas y panel" loading="lazy" />
+                <figcaption class="fc-caption">
+                  <h3>Barra con banquetas y panel</h3>
+                  <p>Con panel decorativo calado en hierro.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="fc-card">
+                <img src="image/66317391654e29.06275756.jpg" alt="Parrilla de hierro en V" loading="lazy" />
+                <figcaption class="fc-caption">
+                  <h3>Parrilla de hierro en V</h3>
+                  <p>Varilla en V, hierro macizo, a medida.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="fc-card">
+                <img src="image/images.jpg" alt="Barra desayunador alta" loading="lazy" />
+                <figcaption class="fc-caption">
+                  <h3>Barra desayunador alta</h3>
+                  <p>Hierro y madera maciza, estilo industrial.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="glide__slide">
+              <figure class="fc-card">
+                <img src="image/D_NQ_NP_669163-MLA41258695134_032020-O.webp" alt="Mesa ratona de madera y hierro" loading="lazy" />
+                <figcaption class="fc-caption">
+                  <h3>Mesa ratona madera y hierro</h3>
+                  <p>Líneas simples, madera lustrada.</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="fc-arrow fc-prev glide__arrow" data-glide-dir="<" aria-label="Anterior">‹</button>
+          <button class="fc-arrow fc-next glide__arrow" data-glide-dir=">" aria-label="Siguiente">›</button>
+        </div>
+        <div class="glide__bullets fc-dots" data-glide-el="controls[nav]">
+          <button class="fc-dot glide__bullet" data-glide-dir="=0" aria-label="Ir al destacado 1"></button>
+          <button class="fc-dot glide__bullet" data-glide-dir="=1" aria-label="Ir al destacado 2"></button>
+          <button class="fc-dot glide__bullet" data-glide-dir="=2" aria-label="Ir al destacado 3"></button>
+          <button class="fc-dot glide__bullet" data-glide-dir="=3" aria-label="Ir al destacado 4"></button>
+          <button class="fc-dot glide__bullet" data-glide-dir="=4" aria-label="Ir al destacado 5"></button>
+          <button class="fc-dot glide__bullet" data-glide-dir="=5" aria-label="Ir al destacado 6"></button>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="contact container">
-      <div class="section-header">
-        <span>Sección 4</span>
-        <h2>Contacto y reservas</h2>
-        <p>Escríbenos por email o chatea por WhatsApp directamente.</p>
+      <div class="section-header center">
+        <span>Contacto</span>
+        <h2>Pedí tu presupuesto</h2>
+        <p>La forma más rápida es por WhatsApp. Contanos qué necesitás (medidas, tipo de trabajo) y te respondemos enseguida.</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-card contact-form-card">
-          <h3>Envíanos un mensaje</h3>
-          <form action="https://formspree.io/f/your-form-id" method="POST">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Tu nombre" required />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="5" placeholder="Cuéntanos qué necesitas" required></textarea>
-            <button class="btn btn-primary" type="submit">Enviar email</button>
-          </form>
+      <div class="contact-cta">
+        <a class="btn btn-whatsapp whatsapp-btn" data-whatsapp href="#" target="_blank" rel="noreferrer">
+          <span class="wa-icon" aria-hidden="true"><svg class="wa-svg" viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.504 1.13 6.75 3.05 9.39L1.05 31.4l6.2-1.98A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.31 22.6c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.726-6.724-7.962-7.034-.226-.31-1.9-2.53-1.9-4.826 0-2.296 1.166-3.424 1.636-3.904.386-.394.846-.574 1.348-.574.162 0 .308.008.44.014.386.016.58.038.834.646.316.762 1.088 2.652 1.18 2.844.094.192.156.416.03.664-.118.256-.222.372-.414.596-.192.224-.374.396-.566.636-.176.208-.374.432-.152.816.222.376.988 1.63 2.122 2.64 1.462 1.302 2.678 1.708 3.106 1.886.318.132.696.1.928-.148.294-.318.656-.844 1.024-1.362.262-.372.592-.418.94-.286.354.124 2.234 1.054 2.62 1.246.386.192.64.286.734.446.092.16.092.926-.294 2.016z"/></svg></span> Escribir por WhatsApp
+        </a>
+        <p class="whatsapp-number">📱 11 6809-0361</p>
+        <span class="contact-accent" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/></svg>
+        </span>
+      </div>
+    </section>
+
+    <section id="taller" class="location container">
+      <div class="section-header center">
+        <span>Dónde estamos</span>
+        <h2>Nuestro taller</h2>
+        <p>Gral. Viamonte 1962, Castelar, Provincia de Buenos Aires. Coordiná una visita o la entrega a domicilio.</p>
+      </div>
+      <div class="location-grid">
+        <div class="location-info">
+          <h3>Hierro &amp; Forja · Los Amigos</h3>
+          <p class="location-address">📍 Gral. Viamonte 1962<br />Castelar, Provincia de Buenos Aires</p>
+          <p class="location-note">Fabricación a medida · Entrega a domicilio en zona oeste y GBA.</p>
+          <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Gral.+Viamonte+1962,+Castelar,+Buenos+Aires" target="_blank" rel="noreferrer">Cómo llegar</a>
         </div>
-        <div class="contact-card contact-info-card">
-          <h3>¿Quieres info rápida?</h3>
-          <p>Si prefieres atención inmediata, chatea por WhatsApp. También puedes usar el código QR para abrir el chat directo.</p>
-          <div class="whatsapp-block">
-            <a class="btn btn-secondary whatsapp-btn" href="https://wa.me/5491123456789" target="_blank" rel="noreferrer">WhatsApp</a>
-            <div class="qr-placeholder">
-              <img src="https://via.placeholder.com/180?text=QR" alt="QR WhatsApp" />
-              <span>Escanea y envía tu mensaje</span>
-            </div>
-          </div>
+        <div class="location-map">
+          <iframe
+            title="Ubicación del taller en el mapa"
+            src="https://www.google.com/maps?q=Gral.%20Viamonte%201962,%20Castelar,%20Buenos%20Aires&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© 2026 Parrilla. Todos los derechos reservados.</p>
+    <div class="container footer-grid">
+      <div class="footer-logo">
+        <img src="image/logo-emblema.png" alt="Logo Hierro &amp; Forja · Los Amigos" />
+      </div>
+      <div class="footer-col footer-about">
+        <a class="brand footer-brand" href="#hero"><span class="brand-text"><span class="brand-name">Hierro <span class="brand-amp">&amp;</span> Forja</span><small class="brand-sub">Los Amigos</small></span></a>
+        <p>Herrería en hierro y acero, hecha a medida y con buena terminación.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p class="footer-phone">📱 11 6809-0361</p>
+        <p class="footer-address">📍 Gral. Viamonte 1962, Castelar, Buenos Aires</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Hierro &amp; Forja · Los Amigos. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Modal: el overlay centra y la tarjeta es el hijo -->
+  <div class="modal-overlay hidden" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal" id="serviceModal">
+      <button class="modal-close" id="closeModal" aria-label="Cerrar">×</button>
+      <div class="modal-media"><img src="" alt="" id="modalImage" /></div>
+      <div class="modal-content">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+  </div>
+
+  <a class="whatsapp-float" data-whatsapp href="#" target="_blank" rel="noreferrer" aria-label="Escribir por WhatsApp"><svg class="wa-svg" viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.504 1.13 6.75 3.05 9.39L1.05 31.4l6.2-1.98A15.9 15.9 0 0 0 16.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.31 22.6c-.386 1.09-1.918 1.994-3.14 2.258-.836.178-1.928.32-5.604-1.204-4.7-1.948-7.726-6.724-7.962-7.034-.226-.31-1.9-2.53-1.9-4.826 0-2.296 1.166-3.424 1.636-3.904.386-.394.846-.574 1.348-.574.162 0 .308.008.44.014.386.016.58.038.834.646.316.762 1.088 2.652 1.18 2.844.094.192.156.416.03.664-.118.256-.222.372-.414.596-.192.224-.374.396-.566.636-.176.208-.374.432-.152.816.222.376.988 1.63 2.122 2.64 1.462 1.302 2.678 1.708 3.106 1.886.318.132.696.1.928-.148.294-.318.656-.844 1.024-1.362.262-.372.592-.418.94-.286.354.124 2.234 1.054 2.62 1.246.386.192.64.286.734.446.092.16.092.926-.294 2.016z"/></svg></a>
+
+  <script src="vendor/glide/glide.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

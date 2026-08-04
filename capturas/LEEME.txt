@@ -1,0 +1,9 @@
+Pegá acá las capturas con estos nombres:
+01-inicio.png
+02-productos.png
+03-modal.png
+04-destacados.png
+05-contacto.png
+06-taller.png
+07-footer.png
+08-mobile.png
